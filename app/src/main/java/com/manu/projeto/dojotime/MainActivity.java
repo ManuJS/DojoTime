@@ -11,7 +11,9 @@ import com.manu.projeto.dojotime.databinding.LayoutTimerPrincipalBinding;
 public class MainActivity extends AppCompatActivity implements MainContract.View {
 
     LayoutTimerPrincipalBinding binding;
-    Toast toast;
+    Toast toastPlay;
+    Toast toastPause;
+    Toast toastStop;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,21 +22,22 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
         binding = DataBindingUtil.setContentView(this, R.layout.layout_timer_principal);
 
         binding.editTime.setText("4:29");
-//        binding.imageButtonPlay
 
-        toast = Toast.makeText(this,"Play", Toast.LENGTH_SHORT );
+        
 
         binding.imageButtonPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                toast.show();
+                toastPlay.show();
             }
         });
 
-        contatempo();
     }
 
-    public void contatempo(){}
+    @Override
+    public void startTimer() {
+
+    }
 
 
 }
