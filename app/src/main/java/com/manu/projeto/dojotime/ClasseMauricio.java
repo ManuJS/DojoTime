@@ -6,6 +6,7 @@ package com.manu.projeto.dojotime;
 
 public class ClasseMauricio {
 
-    public String nome =  "pedro";
-
+    public void method() {
+        int zero = 0;
+    }
 }
