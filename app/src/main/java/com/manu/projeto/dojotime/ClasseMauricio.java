@@ -5,4 +5,7 @@ package com.manu.projeto.dojotime;
  */
 
 public class ClasseMauricio {
+
+    public String nome =  "pedro";
+
 }
