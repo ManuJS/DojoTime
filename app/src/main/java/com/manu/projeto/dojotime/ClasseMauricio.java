@@ -5,4 +5,8 @@ package com.manu.projeto.dojotime;
  */
 
 public class ClasseMauricio {
+
+    public void method() {
+        int zero = 0;
+    }
 }
